@@ -1,0 +1,46 @@
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+
+set FLUIDES; 
+
+set MAGASINS;
+
+set DEMANDES;
+
+################### Variables ###################
+
+var F{i in FLUIDES, j in MAGASINS, k in DEMANDES}, >=0, integer;
+
+var B{j in MAGASINS, k in DEMANDES}, binary;
+
+###################  Constants: Data to load   #########################
+
+param stocksfluides{i in FLUIDES, j in MAGASINS};
+
+param demandesfluides{i in FLUIDES, k in DEMANDES};
+
+param coutsfixe{j in MAGASINS, k in DEMANDES};
+
+param coutsvariable{j in MAGASINS, k in DEMANDES};
+
+################### Constraints ###################
+
+s.t. RespectStockMagasins{i in FLUIDES, j in MAGASINS}:
+    sum{k in DEMANDES} F[i,j,k] <= stocksfluides[i,j];
+
+s.t. RespectDemandes{i in FLUIDES, k in DEMANDES}:
+    sum{j in MAGASINS} F[i,j,k] = demandesfluides[i,k];
+
+s.t. Contrainte{i in FLUIDES, j in MAGASINS, k in DEMANDES}:
+    1000 * B[j,k] >= F[i,j,k];
+
+###### Objective ######
+
+minimize CoutsTotaux: 
+		sum{i in FLUIDES, j in MAGASINS, k in DEMANDES} F[i,j,k] * coutsvariable[j,k]
+        + sum{j in MAGASINS, k in DEMANDES} B[j,k] * coutsfixe[j,k];
+
+
+end;

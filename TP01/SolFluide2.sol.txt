@@ -1,0 +1,86 @@
+Problem:    
+Rows:       22
+Columns:    18 (18 integer, 6 binary)
+Non-zeros:  48
+Status:     INTEGER OPTIMAL
+Objective:  CoutsTotaux = 280 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 RespectStockMagasins(F1,M1)
+                                   0                           1 
+     2 RespectStockMagasins(F1,M2)
+                                   1                           2 
+     3 RespectStockMagasins(F1,M3)
+                                   2                           3 
+     4 RespectStockMagasins(F2,M1)
+                                   0                           1 
+     5 RespectStockMagasins(F2,M2)
+                                   3                           3 
+     6 RespectStockMagasins(F2,M3)
+                                   0                           2 
+     7 RespectDemandes(F1,D1)
+                                   2             2             = 
+     8 RespectDemandes(F1,D2)
+                                   1             1             = 
+     9 RespectDemandes(F2,D1)
+                                   0            -0             = 
+    10 RespectDemandes(F2,D2)
+                                   3             3             = 
+    11 Contrainte(F1,M1,D1)
+                                   0            -0               
+    12 Contrainte(F1,M1,D2)
+                                   0            -0               
+    13 Contrainte(F1,M2,D1)
+                                   0            -0               
+    14 Contrainte(F1,M2,D2)
+                                 999            -0               
+    15 Contrainte(F1,M3,D1)
+                                 998            -0               
+    16 Contrainte(F1,M3,D2)
+                                   0            -0               
+    17 Contrainte(F2,M1,D1)
+                                   0            -0               
+    18 Contrainte(F2,M1,D2)
+                                   0            -0               
+    19 Contrainte(F2,M2,D1)
+                                   0            -0               
+    20 Contrainte(F2,M2,D2)
+                                 997            -0               
+    21 Contrainte(F2,M3,D1)
+                                1000            -0               
+    22 Contrainte(F2,M3,D2)
+                                   0            -0               
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 F(F1,M1,D1)  *              0             0               
+     2 F(F1,M1,D2)  *              0             0               
+     3 F(F1,M2,D1)  *              0             0               
+     4 F(F1,M2,D2)  *              1             0               
+     5 F(F1,M3,D1)  *              2             0               
+     6 F(F1,M3,D2)  *              0             0               
+     7 F(F2,M1,D1)  *              0             0               
+     8 F(F2,M1,D2)  *              0             0               
+     9 F(F2,M2,D1)  *              0             0               
+    10 F(F2,M2,D2)  *              3             0               
+    11 F(F2,M3,D1)  *              0             0               
+    12 F(F2,M3,D2)  *              0             0               
+    13 B(M1,D1)     *              0             0             1 
+    14 B(M1,D2)     *              0             0             1 
+    15 B(M2,D1)     *              0             0             1 
+    16 B(M2,D2)     *              1             0             1 
+    17 B(M3,D1)     *              1             0             1 
+    18 B(M3,D2)     *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

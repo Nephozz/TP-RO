@@ -1,0 +1,38 @@
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+
+set FLUIDES; 
+
+set MAGASINS;
+
+set DEMANDES;
+
+################### Variables ###################
+
+var F{i in FLUIDES, j in MAGASINS, k in DEMANDES}, >=0;
+
+###################  Constants: Data to load   #########################
+
+param coutsfluides{i in FLUIDES, j in MAGASINS}; 
+
+param stocksfluides{i in FLUIDES, j in MAGASINS};
+
+param demandesfluides{i in FLUIDES, k in DEMANDES};
+
+################### Constraints ###################
+
+s.t. RespectStockMagasins{i in FLUIDES, j in MAGASINS}:
+    sum{k in DEMANDES} F[i,j,k] <= stocksfluides[i,j];
+
+s.t. RespectDemandes{i in FLUIDES, k in DEMANDES}:
+    sum{j in MAGASINS} F[i,j,k] = demandesfluides[i,k];
+
+###### Objective ######
+
+minimize CoutsTotaux: 
+		sum{i in FLUIDES, j in MAGASINS, k in DEMANDES} F[i,j,k] * coutsfluides[i,j];
+
+
+end;

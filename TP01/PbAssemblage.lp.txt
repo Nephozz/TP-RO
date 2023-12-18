@@ -1,0 +1,15 @@
+\* Problem : Assemblage de vélo *\
+
+Maximize
+Benefice: 700 C + 300 S
+
+Subject To
+TempsTravailMax : 0.06 C + 0.05 S <= 60
+EspaceStockage : 2.5 C + 1 S <= 1500
+RessourceLimiteeCargo : C <= 700
+
+Integer
+C
+S
+
+End

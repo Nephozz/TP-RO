@@ -1,0 +1,402 @@
+Problem:    
+Rows:       48
+Columns:    216 (216 integer, 216 binary)
+Non-zeros:  1008
+Status:     INTEGER OPTIMAL
+Objective:  Distance = 22 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 SommetAriveeUneFois(ALPHA)
+                                   1             1             = 
+     2 SommetAriveeUneFois(C1)
+                                   1             1             = 
+     3 SommetAriveeUneFois(C2)
+                                   1             1             = 
+     4 SommetAriveeUneFois(C3)
+                                   1             1             = 
+     5 SommetAriveeUneFois(C4)
+                                   1             1             = 
+     6 SommetAriveeUneFois(C5)
+                                   1             1             = 
+     7 SommetDepartUneFois(ALPHA)
+                                   1             1             = 
+     8 SommetDepartUneFois(C1)
+                                   1             1             = 
+     9 SommetDepartUneFois(C2)
+                                   1             1             = 
+    10 SommetDepartUneFois(C3)
+                                   1             1             = 
+    11 SommetDepartUneFois(C4)
+                                   1             1             = 
+    12 SommetDepartUneFois(C5)
+                                   1             1             = 
+    13 SommetTemporaliteUneFois(1)
+                                   1             1             = 
+    14 SommetTemporaliteUneFois(2)
+                                   1             1             = 
+    15 SommetTemporaliteUneFois(3)
+                                   1             1             = 
+    16 SommetTemporaliteUneFois(4)
+                                   1             1             = 
+    17 SommetTemporaliteUneFois(5)
+                                   1             1             = 
+    18 SommetTemporaliteUneFois(6)
+                                   1             1             = 
+    19 TemporaliteCoherente(1,ALPHA)
+                                   0            -0             = 
+    20 TemporaliteCoherente(1,C1)
+                                   0            -0             = 
+    21 TemporaliteCoherente(1,C2)
+                                   0            -0             = 
+    22 TemporaliteCoherente(1,C3)
+                                   0            -0             = 
+    23 TemporaliteCoherente(1,C4)
+                                   0            -0             = 
+    24 TemporaliteCoherente(1,C5)
+                                   0            -0             = 
+    25 TemporaliteCoherente(2,ALPHA)
+                                   0            -0             = 
+    26 TemporaliteCoherente(2,C1)
+                                   0            -0             = 
+    27 TemporaliteCoherente(2,C2)
+                                   0            -0             = 
+    28 TemporaliteCoherente(2,C3)
+                                   0            -0             = 
+    29 TemporaliteCoherente(2,C4)
+                                   0            -0             = 
+    30 TemporaliteCoherente(2,C5)
+                                   0            -0             = 
+    31 TemporaliteCoherente(3,ALPHA)
+                                   0            -0             = 
+    32 TemporaliteCoherente(3,C1)
+                                   0            -0             = 
+    33 TemporaliteCoherente(3,C2)
+                                   0            -0             = 
+    34 TemporaliteCoherente(3,C3)
+                                   0            -0             = 
+    35 TemporaliteCoherente(3,C4)
+                                   0            -0             = 
+    36 TemporaliteCoherente(3,C5)
+                                   0            -0             = 
+    37 TemporaliteCoherente(4,ALPHA)
+                                   0            -0             = 
+    38 TemporaliteCoherente(4,C1)
+                                   0            -0             = 
+    39 TemporaliteCoherente(4,C2)
+                                   0            -0             = 
+    40 TemporaliteCoherente(4,C3)
+                                   0            -0             = 
+    41 TemporaliteCoherente(4,C4)
+                                   0            -0             = 
+    42 TemporaliteCoherente(4,C5)
+                                   0            -0             = 
+    43 TemporaliteCoherente(5,ALPHA)
+                                   0            -0             = 
+    44 TemporaliteCoherente(5,C1)
+                                   0            -0             = 
+    45 TemporaliteCoherente(5,C2)
+                                   0            -0             = 
+    46 TemporaliteCoherente(5,C3)
+                                   0            -0             = 
+    47 TemporaliteCoherente(5,C4)
+                                   0            -0             = 
+    48 TemporaliteCoherente(5,C5)
+                                   0            -0             = 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 C(ALPHA,C1,1)
+                    *              0             0             1 
+     2 C(ALPHA,C1,2)
+                    *              0             0             1 
+     3 C(ALPHA,C1,3)
+                    *              0             0             1 
+     4 C(ALPHA,C1,4)
+                    *              0             0             1 
+     5 C(ALPHA,C1,5)
+                    *              0             0             1 
+     6 C(ALPHA,C1,6)
+                    *              0             0             1 
+     7 C(ALPHA,C2,1)
+                    *              1             0             1 
+     8 C(ALPHA,C2,2)
+                    *              0             0             1 
+     9 C(ALPHA,C2,3)
+                    *              0             0             1 
+    10 C(ALPHA,C2,4)
+                    *              0             0             1 
+    11 C(ALPHA,C2,5)
+                    *              0             0             1 
+    12 C(ALPHA,C2,6)
+                    *              0             0             1 
+    13 C(ALPHA,C3,1)
+                    *              0             0             1 
+    14 C(ALPHA,C3,2)
+                    *              0             0             1 
+    15 C(ALPHA,C3,3)
+                    *              0             0             1 
+    16 C(ALPHA,C3,4)
+                    *              0             0             1 
+    17 C(ALPHA,C3,5)
+                    *              0             0             1 
+    18 C(ALPHA,C3,6)
+                    *              0             0             1 
+    19 C(ALPHA,C4,1)
+                    *              0             0             1 
+    20 C(ALPHA,C4,2)
+                    *              0             0             1 
+    21 C(ALPHA,C4,3)
+                    *              0             0             1 
+    22 C(ALPHA,C4,4)
+                    *              0             0             1 
+    23 C(ALPHA,C4,5)
+                    *              0             0             1 
+    24 C(ALPHA,C4,6)
+                    *              0             0             1 
+    25 C(ALPHA,C5,1)
+                    *              0             0             1 
+    26 C(ALPHA,C5,2)
+                    *              0             0             1 
+    27 C(ALPHA,C5,3)
+                    *              0             0             1 
+    28 C(ALPHA,C5,4)
+                    *              0             0             1 
+    29 C(ALPHA,C5,5)
+                    *              0             0             1 
+    30 C(ALPHA,C5,6)
+                    *              0             0             1 
+    31 C(C1,ALPHA,1)
+                    *              0             0             1 
+    32 C(C1,ALPHA,2)
+                    *              0             0             1 
+    33 C(C1,ALPHA,3)
+                    *              0             0             1 
+    34 C(C1,ALPHA,4)
+                    *              0             0             1 
+    35 C(C1,ALPHA,5)
+                    *              0             0             1 
+    36 C(C1,ALPHA,6)
+                    *              1             0             1 
+    37 C(C1,C2,1)   *              0             0             1 
+    38 C(C1,C2,2)   *              0             0             1 
+    39 C(C1,C2,3)   *              0             0             1 
+    40 C(C1,C2,4)   *              0             0             1 
+    41 C(C1,C2,5)   *              0             0             1 
+    42 C(C1,C2,6)   *              0             0             1 
+    43 C(C1,C3,1)   *              0             0             1 
+    44 C(C1,C3,2)   *              0             0             1 
+    45 C(C1,C3,3)   *              0             0             1 
+    46 C(C1,C3,4)   *              0             0             1 
+    47 C(C1,C3,5)   *              0             0             1 
+    48 C(C1,C3,6)   *              0             0             1 
+    49 C(C1,C4,1)   *              0             0             1 
+    50 C(C1,C4,2)   *              0             0             1 
+    51 C(C1,C4,3)   *              0             0             1 
+    52 C(C1,C4,4)   *              0             0             1 
+    53 C(C1,C4,5)   *              0             0             1 
+    54 C(C1,C4,6)   *              0             0             1 
+    55 C(C1,C5,1)   *              0             0             1 
+    56 C(C1,C5,2)   *              0             0             1 
+    57 C(C1,C5,3)   *              0             0             1 
+    58 C(C1,C5,4)   *              0             0             1 
+    59 C(C1,C5,5)   *              0             0             1 
+    60 C(C1,C5,6)   *              0             0             1 
+    61 C(C2,ALPHA,1)
+                    *              0             0             1 
+    62 C(C2,ALPHA,2)
+                    *              0             0             1 
+    63 C(C2,ALPHA,3)
+                    *              0             0             1 
+    64 C(C2,ALPHA,4)
+                    *              0             0             1 
+    65 C(C2,ALPHA,5)
+                    *              0             0             1 
+    66 C(C2,ALPHA,6)
+                    *              0             0             1 
+    67 C(C2,C1,1)   *              0             0             1 
+    68 C(C2,C1,2)   *              0             0             1 
+    69 C(C2,C1,3)   *              0             0             1 
+    70 C(C2,C1,4)   *              0             0             1 
+    71 C(C2,C1,5)   *              0             0             1 
+    72 C(C2,C1,6)   *              0             0             1 
+    73 C(C2,C3,1)   *              0             0             1 
+    74 C(C2,C3,2)   *              1             0             1 
+    75 C(C2,C3,3)   *              0             0             1 
+    76 C(C2,C3,4)   *              0             0             1 
+    77 C(C2,C3,5)   *              0             0             1 
+    78 C(C2,C3,6)   *              0             0             1 
+    79 C(C2,C4,1)   *              0             0             1 
+    80 C(C2,C4,2)   *              0             0             1 
+    81 C(C2,C4,3)   *              0             0             1 
+    82 C(C2,C4,4)   *              0             0             1 
+    83 C(C2,C4,5)   *              0             0             1 
+    84 C(C2,C4,6)   *              0             0             1 
+    85 C(C2,C5,1)   *              0             0             1 
+    86 C(C2,C5,2)   *              0             0             1 
+    87 C(C2,C5,3)   *              0             0             1 
+    88 C(C2,C5,4)   *              0             0             1 
+    89 C(C2,C5,5)   *              0             0             1 
+    90 C(C2,C5,6)   *              0             0             1 
+    91 C(C3,ALPHA,1)
+                    *              0             0             1 
+    92 C(C3,ALPHA,2)
+                    *              0             0             1 
+    93 C(C3,ALPHA,3)
+                    *              0             0             1 
+    94 C(C3,ALPHA,4)
+                    *              0             0             1 
+    95 C(C3,ALPHA,5)
+                    *              0             0             1 
+    96 C(C3,ALPHA,6)
+                    *              0             0             1 
+    97 C(C3,C1,1)   *              0             0             1 
+    98 C(C3,C1,2)   *              0             0             1 
+    99 C(C3,C1,3)   *              0             0             1 
+   100 C(C3,C1,4)   *              0             0             1 
+   101 C(C3,C1,5)   *              0             0             1 
+   102 C(C3,C1,6)   *              0             0             1 
+   103 C(C3,C2,1)   *              0             0             1 
+   104 C(C3,C2,2)   *              0             0             1 
+   105 C(C3,C2,3)   *              0             0             1 
+   106 C(C3,C2,4)   *              0             0             1 
+   107 C(C3,C2,5)   *              0             0             1 
+   108 C(C3,C2,6)   *              0             0             1 
+   109 C(C3,C4,1)   *              0             0             1 
+   110 C(C3,C4,2)   *              0             0             1 
+   111 C(C3,C4,3)   *              0             0             1 
+   112 C(C3,C4,4)   *              0             0             1 
+   113 C(C3,C4,5)   *              0             0             1 
+   114 C(C3,C4,6)   *              0             0             1 
+   115 C(C3,C5,1)   *              0             0             1 
+   116 C(C3,C5,2)   *              0             0             1 
+   117 C(C3,C5,3)   *              1             0             1 
+   118 C(C3,C5,4)   *              0             0             1 
+   119 C(C3,C5,5)   *              0             0             1 
+   120 C(C3,C5,6)   *              0             0             1 
+   121 C(C4,ALPHA,1)
+                    *              0             0             1 
+   122 C(C4,ALPHA,2)
+                    *              0             0             1 
+   123 C(C4,ALPHA,3)
+                    *              0             0             1 
+   124 C(C4,ALPHA,4)
+                    *              0             0             1 
+   125 C(C4,ALPHA,5)
+                    *              0             0             1 
+   126 C(C4,ALPHA,6)
+                    *              0             0             1 
+   127 C(C4,C1,1)   *              0             0             1 
+   128 C(C4,C1,2)   *              0             0             1 
+   129 C(C4,C1,3)   *              0             0             1 
+   130 C(C4,C1,4)   *              0             0             1 
+   131 C(C4,C1,5)   *              1             0             1 
+   132 C(C4,C1,6)   *              0             0             1 
+   133 C(C4,C2,1)   *              0             0             1 
+   134 C(C4,C2,2)   *              0             0             1 
+   135 C(C4,C2,3)   *              0             0             1 
+   136 C(C4,C2,4)   *              0             0             1 
+   137 C(C4,C2,5)   *              0             0             1 
+   138 C(C4,C2,6)   *              0             0             1 
+   139 C(C4,C3,1)   *              0             0             1 
+   140 C(C4,C3,2)   *              0             0             1 
+   141 C(C4,C3,3)   *              0             0             1 
+   142 C(C4,C3,4)   *              0             0             1 
+   143 C(C4,C3,5)   *              0             0             1 
+   144 C(C4,C3,6)   *              0             0             1 
+   145 C(C4,C5,1)   *              0             0             1 
+   146 C(C4,C5,2)   *              0             0             1 
+   147 C(C4,C5,3)   *              0             0             1 
+   148 C(C4,C5,4)   *              0             0             1 
+   149 C(C4,C5,5)   *              0             0             1 
+   150 C(C4,C5,6)   *              0             0             1 
+   151 C(C5,ALPHA,1)
+                    *              0             0             1 
+   152 C(C5,ALPHA,2)
+                    *              0             0             1 
+   153 C(C5,ALPHA,3)
+                    *              0             0             1 
+   154 C(C5,ALPHA,4)
+                    *              0             0             1 
+   155 C(C5,ALPHA,5)
+                    *              0             0             1 
+   156 C(C5,ALPHA,6)
+                    *              0             0             1 
+   157 C(C5,C1,1)   *              0             0             1 
+   158 C(C5,C1,2)   *              0             0             1 
+   159 C(C5,C1,3)   *              0             0             1 
+   160 C(C5,C1,4)   *              0             0             1 
+   161 C(C5,C1,5)   *              0             0             1 
+   162 C(C5,C1,6)   *              0             0             1 
+   163 C(C5,C2,1)   *              0             0             1 
+   164 C(C5,C2,2)   *              0             0             1 
+   165 C(C5,C2,3)   *              0             0             1 
+   166 C(C5,C2,4)   *              0             0             1 
+   167 C(C5,C2,5)   *              0             0             1 
+   168 C(C5,C2,6)   *              0             0             1 
+   169 C(C5,C3,1)   *              0             0             1 
+   170 C(C5,C3,2)   *              0             0             1 
+   171 C(C5,C3,3)   *              0             0             1 
+   172 C(C5,C3,4)   *              0             0             1 
+   173 C(C5,C3,5)   *              0             0             1 
+   174 C(C5,C3,6)   *              0             0             1 
+   175 C(C5,C4,1)   *              0             0             1 
+   176 C(C5,C4,2)   *              0             0             1 
+   177 C(C5,C4,3)   *              0             0             1 
+   178 C(C5,C4,4)   *              1             0             1 
+   179 C(C5,C4,5)   *              0             0             1 
+   180 C(C5,C4,6)   *              0             0             1 
+   181 C(ALPHA,ALPHA,1)
+                    *              0             0             1 
+   182 C(ALPHA,ALPHA,2)
+                    *              0             0             1 
+   183 C(ALPHA,ALPHA,3)
+                    *              0             0             1 
+   184 C(ALPHA,ALPHA,4)
+                    *              0             0             1 
+   185 C(ALPHA,ALPHA,5)
+                    *              0             0             1 
+   186 C(ALPHA,ALPHA,6)
+                    *              0             0             1 
+   187 C(C1,C1,1)   *              0             0             1 
+   188 C(C1,C1,2)   *              0             0             1 
+   189 C(C1,C1,3)   *              0             0             1 
+   190 C(C1,C1,4)   *              0             0             1 
+   191 C(C1,C1,5)   *              0             0             1 
+   192 C(C1,C1,6)   *              0             0             1 
+   193 C(C2,C2,1)   *              0             0             1 
+   194 C(C2,C2,2)   *              0             0             1 
+   195 C(C2,C2,3)   *              0             0             1 
+   196 C(C2,C2,4)   *              0             0             1 
+   197 C(C2,C2,5)   *              0             0             1 
+   198 C(C2,C2,6)   *              0             0             1 
+   199 C(C3,C3,1)   *              0             0             1 
+   200 C(C3,C3,2)   *              0             0             1 
+   201 C(C3,C3,3)   *              0             0             1 
+   202 C(C3,C3,4)   *              0             0             1 
+   203 C(C3,C3,5)   *              0             0             1 
+   204 C(C3,C3,6)   *              0             0             1 
+   205 C(C4,C4,1)   *              0             0             1 
+   206 C(C4,C4,2)   *              0             0             1 
+   207 C(C4,C4,3)   *              0             0             1 
+   208 C(C4,C4,4)   *              0             0             1 
+   209 C(C4,C4,5)   *              0             0             1 
+   210 C(C4,C4,6)   *              0             0             1 
+   211 C(C5,C5,1)   *              0             0             1 
+   212 C(C5,C5,2)   *              0             0             1 
+   213 C(C5,C5,3)   *              0             0             1 
+   214 C(C5,C5,4)   *              0             0             1 
+   215 C(C5,C5,5)   *              0             0             1 
+   216 C(C5,C5,6)   *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

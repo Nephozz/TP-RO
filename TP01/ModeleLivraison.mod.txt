@@ -1,0 +1,39 @@
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+
+set LIEUX;
+
+set SEQUENCE;
+
+set ORDRES;
+
+################### Variables ###################
+
+var C{i in LIEUX, j in LIEUX, k in SEQUENCE}, binary;
+
+###################  Constants: Data to load   #########################
+
+param distances{i in LIEUX, j in LIEUX};
+
+################### Constraints ###################
+
+s.t. SommetAriveeUneFois{i in LIEUX}:
+    sum{j in LIEUX,k in SEQUENCE} C[i,j,k] = 1;
+
+s.t. SommetDepartUneFois{j in LIEUX}:
+    sum{i in LIEUX, k in SEQUENCE} C[i,j,k] = 1;
+
+s.t. SommetTemporaliteUneFois{k in SEQUENCE}:
+    sum{i in LIEUX, j in LIEUX} C[i,j,k] = 1;
+
+s.t. TemporaliteCoherente{k in ORDRES, n in LIEUX}:
+    sum{i in LIEUX} C[i,n,k] = sum{j in LIEUX} C[n,j,k+1];
+
+###### Objective ######
+
+minimize Distance: 
+		sum{i in LIEUX, j in LIEUX, k in SEQUENCE} C[i,j,k] * distances[i,j];
+
+end;

@@ -1,0 +1,37 @@
+\* Problem: ModeleAffectation *\
+
+Maximize
+ BonheurTotal: + 4 B(P1,T1) + 9 B(P1,T2) + 2 B(P1,T3) + 7 B(P2,T1)
+ + 8 B(P2,T2) + B(P2,T3) + 9 B(P3,T1) + 3 B(P3,T2) + 2 B(P3,T3)
+
+Subject To
+ RespectUneTacheParPersonne(P1): + B(P1,T1) + B(P1,T2) + B(P1,T3) = 1
+ RespectUneTacheParPersonne(P2): + B(P2,T1) + B(P2,T2) + B(P2,T3) = 1
+ RespectUneTacheParPersonne(P3): + B(P3,T1) + B(P3,T2) + B(P3,T3) = 1
+ RespectUnePersonneParTachr(T1): + B(P1,T1) + B(P2,T1) + B(P3,T1) = 1
+ RespectUnePersonneParTachr(T2): + B(P1,T2) + B(P2,T2) + B(P3,T2) = 1
+ RespectUnePersonneParTachr(T3): + B(P1,T3) + B(P2,T3) + B(P3,T3) = 1
+
+Bounds
+ 0 <= B(P1,T1) <= 1
+ 0 <= B(P1,T2) <= 1
+ 0 <= B(P1,T3) <= 1
+ 0 <= B(P2,T1) <= 1
+ 0 <= B(P2,T2) <= 1
+ 0 <= B(P2,T3) <= 1
+ 0 <= B(P3,T1) <= 1
+ 0 <= B(P3,T2) <= 1
+ 0 <= B(P3,T3) <= 1
+
+Generals
+ B(P1,T1)
+ B(P1,T2)
+ B(P1,T3)
+ B(P2,T1)
+ B(P2,T2)
+ B(P2,T3)
+ B(P3,T1)
+ B(P3,T2)
+ B(P3,T3)
+
+End

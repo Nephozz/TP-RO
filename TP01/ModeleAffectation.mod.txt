@@ -1,0 +1,33 @@
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+
+set PERSONNES; 
+
+set TACHES;	
+
+################### Variables ###################
+
+#La personne i participe a la tache j
+var B{i in PERSONNES, j in TACHES}, binary;
+
+###################  Constants: Data to load   #########################
+
+param scorestaches{i in PERSONNES, j in TACHES}; 
+
+################### Constraints ###################
+
+s.t. RespectUneTacheParPersonne{i in PERSONNES}:
+    sum{j in TACHES} B[i,j] = 1;
+
+s.t. RespectUnePersonneParTachr{j in TACHES}:
+    sum{i in PERSONNES} B[i,j] = 1;
+
+###### Objective ######
+
+maximize BonheurTotal: 
+		sum{i in PERSONNES, j in TACHES} B[i,j]* scorestaches[i,j]; 
+
+
+end;
